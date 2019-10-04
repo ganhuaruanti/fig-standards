@@ -10,10 +10,7 @@
 
 ## 概覽
 
-這份規範是針對 [PSR-2][] 的延伸，拓展和取代版本。之前附屬於 [PSR-1][] 的規範
-
-This specification extends, expands and replaces [PSR-2][], the coding style guide and
-requires adherence to [PSR-1][], the basic coding standard.
+這份規範是針對 [PSR-2][]，程式碼風格規範，的延伸，拓展和取代版本。並且需要附屬於 [PSR-1][]，基礎程式碼規範。
 
 跟 [PSR-2][] 一樣，此規範的用意在於減少不同作者之間的認知摩擦。
 
@@ -26,7 +23,9 @@ across multiple projects, it helps to have one set of guidelines to be used amon
 all those projects. Thus, the benefit of this guide is not in the rules themselves
 but the sharing of those rules.
 
-[PSR-2][] was accepted in 2012 and since then a number of changes have been made to PHP
+[PSR-2][] 在 2012 被接受，從那時至今，
+
+and since then a number of changes have been made to PHP
 which has implications for coding style guidelines. Whilst [PSR-2] is very comprehensive
 of PHP functionality that existed at the time of writing, new functionality is very
 open to interpretation. This PSR, therefore, seeks to clarify the content of PSR-2 in
@@ -109,8 +108,7 @@ There MUST NOT be more than one statement per line.
 
 ### 2.4 排版
 
-Code MUST use an indent of 4 spaces for each indent level, and MUST NOT use
-tabs for indenting.
+程式碼**必須**使用四個空格做排版，**一定不可**使用 tabs 做排版。
 
 ### 2.5 關鍵字以及型態
 
