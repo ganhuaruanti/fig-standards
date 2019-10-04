@@ -10,8 +10,12 @@
 
 ## 概覽
 
+這份規範是針對 [PSR-2][] 的延伸，拓展和取代版本。之前附屬於 [PSR-1][] 的規範
+
 This specification extends, expands and replaces [PSR-2][], the coding style guide and
 requires adherence to [PSR-1][], the basic coding standard.
+
+跟 [PSR-2][] 一樣，此規範的用意在於減少不同作者之間的認知摩擦。
 
 Like [PSR-2][], the intent of this specification is to reduce cognitive friction when
 scanning code from different authors. It does so by enumerating a shared set of rules
@@ -77,8 +81,7 @@ class Foo extends Bar implements FooInterface
 
 程式碼**必須**遵循 [PSR-1][] 中的規範 。
 
-The term 'StudlyCaps' in PSR-1 MUST be interpreted as PascalCase where the first letter of
-each word is capitalized including the very first letter.
+PSR-1 裡面所說的「駝峰式」（StudlyCaps），**必須**解讀成 Pascal 命名法，也就是命名中每個單字的開頭為大寫，並且整個命名的開頭也是大寫的方式。
 
 ### 2.2 檔案
 
