@@ -2,7 +2,7 @@
 
 關鍵詞「必須」("MUST")、「一定不可/一定不能」("MUST NOT")、「需要」("REQUIRED")、
 「將會」("SHALL")、「不會」("SHALL NOT")、「應該」("SHOULD")、「不該」("SHOULD NOT")、
-「推薦」("RECOMMENDED")、「可以」("MAY")和「可選」("OPTIONAL")的詳細描述可參見 [RFC 2119][] 。
+「推薦」("RECOMMENDED")、「可以」("MAY")和「可選」("OPTIONAL")的詳細描述，可參見 [RFC 2119][] 。
 
 [RFC 2119]: http://tools.ietf.org/html/rfc2119
 
