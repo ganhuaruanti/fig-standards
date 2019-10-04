@@ -1,7 +1,9 @@
 # 程式碼風格規範延伸版
 
 關鍵詞「必須」("MUST")、「一定不可/一定不能」("MUST NOT")、「需要」("REQUIRED")、
+
 「將會」("SHALL")、「不會」("SHALL NOT")、「應該」("SHOULD")、「不該」("SHOULD NOT")、
+
 「推薦」("RECOMMENDED")、「可以」("MAY")和「可選」("OPTIONAL")的詳細描述，可參見 [RFC 2119][] 。
 
 [RFC 2119]: http://tools.ietf.org/html/rfc2119
@@ -116,7 +118,7 @@ Any new types and keywords added to future PHP versions MUST be in lower case.
 Short form of type keywords MUST be used i.e. `bool` instead of `boolean`,
 `int` instead of `integer` etc.
 
-## 3. Declare Statements, Namespace, and Import Statements
+## 3. 宣告，Namespace，以及 Import 宣告
 
 The header of a PHP file may consist of a number of different blocks. If present,
 each of the blocks below MUST be separated by a single blank line, and MUST NOT contain
@@ -229,7 +231,7 @@ declare(ticks=1) {
 }
 ~~~
 
-## 4. Classes, Properties, and Methods
+## 4. 類別、屬性和方法
 
 The term "class" refers to all classes, interfaces, and traits.
 
@@ -243,7 +245,7 @@ there are no arguments passed to the constructor.
 new Foo();
 ~~~
 
-### 4.1 Extends and Implements
+### 4.1 繼承和實作
 
 The `extends` and `implements` keywords MUST be declared on the same line as
 the class name.
@@ -295,7 +297,7 @@ class ClassName extends ParentClass implements
 }
 ~~~
 
-### 4.2 Using traits
+### 4.2 使用 traits
 
 The `use` keyword used inside the classes to implement traits MUST be
 declared on the next line after the opening brace.
@@ -413,7 +415,7 @@ class ClassName
 }
 ~~~
 
-### 4.4 Methods and Functions
+### 4.4 方法和函式
 
 Visibility MUST be declared on all methods.
 
