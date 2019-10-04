@@ -75,18 +75,18 @@ class Foo extends Bar implements FooInterface
 
 ### 2.1 基本程式準則
 
-Code MUST follow all rules outlined in [PSR-1].
+程式碼**必須**遵循 [PSR-1][] 中的規範 。
 
 The term 'StudlyCaps' in PSR-1 MUST be interpreted as PascalCase where the first letter of
 each word is capitalized including the very first letter.
 
 ### 2.2 檔案
 
-All PHP files MUST use the Unix LF (linefeed) line ending only.
+所有 PHP 文件**必須**以 `Unix LF (linefeed)` 作為行的結束符號。
 
-All PHP files MUST end with a non-blank line, terminated with a single LF.
+所有 PHP 文件**必須**以一個非空白行，以單一 `LF` 結束的一行作為結尾。
 
-The closing `?>` tag MUST be omitted from files containing only PHP.
+純 PHP 程式檔案**必须**省略最後的 `?>` 標籤。
 
 ### 2.3 行
 
@@ -854,7 +854,7 @@ foreach ($iterable as $key => $value) {
 }
 ~~~
 
-### 5.6 `try`, `catch`, `finally`
+### 5.6 `try`，`catch`，`finally`
 
 A `try-catch-finally` block looks like the following. Note the placement of
 parentheses, spaces, and braces.
@@ -882,7 +882,7 @@ used for readability purposes.
 
 All operators not described here are left undefined.
 
-### 6.1. Unary operators
+### 6.1. 一元運算
 
 The increment/decrement operators MUST NOT have any space between
 the operator and operand.
@@ -896,7 +896,7 @@ Type casting operators MUST NOT have any space within the parentheses:
 $intValue = (int) $input;
 ~~~
 
-### 6.2. Binary operators
+### 6.2. 二元運算
 
 All binary [arithmetic][], [comparison][], [assignment][], [bitwise][],
 [logical][], [string][], and [type][] operators MUST be preceded and
@@ -909,7 +909,7 @@ if ($a === $b) {
 }
 ~~~
 
-### 6.3. Ternary operators
+### 6.3. 三元運算
 
 The conditional operator, also known simply as the ternary operator, MUST be
 preceded and followed by at least one space around both the `?`
@@ -924,7 +924,7 @@ MUST follow the same style rules as other binary [comparison][] operators:
 $variable = $foo ?: 'bar';
 ~~~
 
-## 7. Closures
+## 7. 閉包
 
 Closures MUST be declared with a space after the `function` keyword, and a
 space before and after the `use` keyword.
@@ -1040,7 +1040,7 @@ $foo->bar(
 );
 ~~~
 
-## 8. Anonymous Classes
+## 8. 匿名類別
 
 Anonymous Classes MUST follow the same guidelines and principles as closures
 in the above section.
