@@ -1,12 +1,12 @@
-# Extended Coding Style Guide
+# 程式碼風格規範延伸版
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
-"SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be
-interpreted as described in [RFC 2119][].
+關鍵詞「必須」("MUST")、「一定不可/一定不能」("MUST NOT")、「需要」("REQUIRED")、
+「將會」("SHALL")、「不會」("SHALL NOT")、「應該」("SHOULD")、「不該」("SHOULD NOT")、
+「推薦」("RECOMMENDED")、「可以」("MAY")和「可選」("OPTIONAL")的詳細描述可參見 [RFC 2119][] 。
 
 [RFC 2119]: http://tools.ietf.org/html/rfc2119
 
-## Overview
+## 概覽
 
 This specification extends, expands and replaces [PSR-2][], the coding style guide and
 requires adherence to [PSR-1][], the basic coding standard.
@@ -27,14 +27,13 @@ open to interpretation. This PSR, therefore, seeks to clarify the content of PSR
 a more modern context with new functionality available, and make the errata to PSR-2
 binding.
 
-### Previous language versions
+### 針對之前的語言版本
 
-Throughout this document, any instructions MAY be ignored if they do not exist in versions
-of PHP supported by your project.
+針對本文件，如果目前開發專案的 PHP 版本還未支援特定指示所講到的功能，**可以**忽略該指示。
 
-### Example
+### 範例
 
-This example encompasses some of the rules below as a quick overview:
+下面的範例程式簡單地展示了大部分規範：
 
 ~~~php
 <?php
@@ -70,16 +69,16 @@ class Foo extends Bar implements FooInterface
 }
 ~~~
 
-## 2. General
+## 2. 通則
 
-### 2.1 Basic Coding Standard
+### 2.1 基本程式準則
 
 Code MUST follow all rules outlined in [PSR-1].
 
 The term 'StudlyCaps' in PSR-1 MUST be interpreted as PascalCase where the first letter of
 each word is capitalized including the very first letter.
 
-### 2.2 Files
+### 2.2 檔案
 
 All PHP files MUST use the Unix LF (linefeed) line ending only.
 
@@ -87,7 +86,7 @@ All PHP files MUST end with a non-blank line, terminated with a single LF.
 
 The closing `?>` tag MUST be omitted from files containing only PHP.
 
-### 2.3 Lines
+### 2.3 行
 
 There MUST NOT be a hard limit on line length.
 
@@ -103,12 +102,12 @@ blocks of code except where explicitly forbidden.
 
 There MUST NOT be more than one statement per line.
 
-### 2.4 Indenting
+### 2.4 排版
 
 Code MUST use an indent of 4 spaces for each indent level, and MUST NOT use
 tabs for indenting.
 
-### 2.5 Keywords and Types
+### 2.5 關鍵字以及型態
 
 All PHP reserved keywords and types [[1]][keywords][[2]][types] MUST be in lower case.
 
