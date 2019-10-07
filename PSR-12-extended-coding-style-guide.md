@@ -102,10 +102,9 @@ lines longer than that **應該** be split into multiple subsequent lines of no 
 
 每行結尾**不該**留有空白。
 
-Blank lines MAY be added to improve readability and to indicate related
-blocks of code except where explicitly forbidden.
+除了特別禁止的部分之外，**可以**為了增加可讀性和區分相關區塊，加入空白行。
 
-There MUST NOT be more than one statement per line.
+每行**絕對不可**超過一個陳述句。
 
 ### 2.4 排版
 
@@ -113,12 +112,11 @@ There MUST NOT be more than one statement per line.
 
 ### 2.5 關鍵字以及型態
 
-All PHP reserved keywords and types [[1]][keywords][[2]][types] MUST be in lower case.
+所有 PHP 的關鍵字和型態[[1]][keywords][[2]][types] **必須**使用小寫。
 
 Any new types and keywords added to future PHP versions MUST be in lower case.
 
-Short form of type keywords MUST be used i.e. `bool` instead of `boolean`,
-`int` instead of `integer` etc.
+**必須**使用短版本的型態關鍵字，比方說 `bool` 而不是 `boolean`，`int` 而不是 `integer`⋯⋯等等。
 
 ## 3. 宣告，Namespace，以及 Import 宣告
 
@@ -154,7 +152,7 @@ The following example illustrates a complete list of all blocks:
 <?php
 
 /**
- * This file contains an example of coding styles.
+ * 這個檔案包含程式碼風格的範例
  */
 
 declare(strict_types=1);
@@ -172,11 +170,11 @@ use const Vendor\Package\{CONSTANT_A, CONSTANT_B, CONSTANT_C};
 use const Another\Vendor\CONSTANT_D;
 
 /**
- * FooBar is an example class.
+ * FooBar 是一個範例類別
  */
 class FooBar
 {
-    // ... additional PHP code ...
+    // ... 其餘 PHP 程式碼 ...
 }
 
 ~~~
