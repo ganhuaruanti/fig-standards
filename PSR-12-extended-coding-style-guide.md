@@ -1,6 +1,6 @@
 # 程式碼風格規範延伸版
 
-關鍵詞「必須」("MUST")、「一定不可/一定不能」("MUST NOT")、「需要」("REQUIRED")、
+關鍵詞「必須」("MUST")、「絕對不可／絕對不能」("MUST NOT")、「需要」("REQUIRED")、
 
 「將會」("SHALL")、「不會」("SHALL NOT")、「應該」("SHOULD")、「不該」("SHOULD NOT")、
 
@@ -88,18 +88,19 @@ PSR-1 裡面所說的「駝峰式」（StudlyCaps），**必須**解讀成 Pasca
 
 所有 PHP 文件**必須**以一個非空白行，以單一 `LF` 結束的一行作為結尾。
 
-純 PHP 程式檔案**必须**省略最後的 `?>` 標籤。
+純 PHP 程式檔案**必須**省略最後的 `?>` 標籤。
 
 ### 2.3 行
 
-There MUST NOT be a hard limit on line length.
+行長度**絕對不可**有硬限制。
 
-The soft limit on line length MUST be 120 characters.
+行長度的**軟限制**必須是 120 個字元。
 
-Lines SHOULD NOT be longer than 80 characters; lines longer than that SHOULD
-be split into multiple subsequent lines of no more than 80 characters each.
+一行程式碼的長度**不該**超過 80 個字元。
 
-There MUST NOT be trailing whitespace at the end of lines.
+lines longer than that **應該** be split into multiple subsequent lines of no more than 80 characters each.
+
+每行結尾**不該**留有空白。
 
 Blank lines MAY be added to improve readability and to indicate related
 blocks of code except where explicitly forbidden.
@@ -108,7 +109,7 @@ There MUST NOT be more than one statement per line.
 
 ### 2.4 排版
 
-程式碼**必須**使用四個空格做排版，**一定不可**使用 tabs 做排版。
+程式碼**必須**使用四個空格做排版，**絕對不可**使用 tabs 做排版。
 
 ### 2.5 關鍵字以及型態
 
