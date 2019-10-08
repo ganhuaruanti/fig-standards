@@ -12,15 +12,9 @@
 
 這份規範是針對 [PSR-2][]，程式碼風格規範，的延伸，拓展和取代版本。並且需要附屬於 [PSR-1][]，基礎程式碼規範。
 
-跟 [PSR-2][] 一樣，此規範的用意，在藉由列舉和分享一系列的 PHP 格式規則，減少不同程式撰寫者之間的認知摩擦。這份 PSR 文件
+跟 [PSR-2][] 一樣，此規範的用意，在藉由列舉和分享一系列的 PHP 格式規則，減少不同程式撰寫者之間的認知摩擦。這份 PSR 文件希望能在不同專案間，建立排版工具可以實作，專案可以宣布遵守，開發者可以簡單理解的設定方式。
 
-
-This PSR seeks to provide a set way that
-coding style tools can implement, projects can declare adherence to and developers
-can easily relate to between different projects. When various authors collaborate
-across multiple projects, it helps to have one set of guidelines to be used among
-all those projects. Thus, the benefit of this guide is not in the rules themselves
-but the sharing of those rules.
+當許多程式撰寫者在不同的專案合作時，針對這些專案制定一個共同的準則是很有幫助的。所以，這份規範的價值不在規則本身，而在散播這份規則上。
 
 [PSR-2][] 在 2012 被接受為正式標準，從那時至今，PHP 語言新增了許多會影響規範的修改。雖然 [PSR-2] 對制定當時的 PHP 有相當全面的規範，但是對這些新功能，實作方式則沒有規範。
 
@@ -137,9 +131,7 @@ When the opening `<?php` tag is on the first line of the file, it MUST be on its
 own line with no other statements unless it is a file containing markup outside of PHP
 opening and closing tags.
 
-Import statements MUST never begin with a leading backslash as they
-must always be fully qualified.
-
+因為必須始終合法，引入陳述**絕對不能**以反斜線開頭。
 
 下面的範例包含上述全部的區塊：
 
@@ -227,7 +219,7 @@ declare(ticks=1) {
 
 ## 4. 類別、屬性和方法
 
-The term "class" refers to all classes, interfaces, and traits.
+這裡所說的「類別」包含所有的類別，介面，以及 trait。
 
 Any closing brace MUST NOT be followed by any comment or statement on the
 same line.
@@ -291,7 +283,7 @@ class ClassName extends ParentClass implements
 }
 ~~~
 
-### 4.2 使用 traits
+### 4.2 使用 trait
 
 The `use` keyword used inside the classes to implement traits MUST be
 declared on the next line after the opening brace.
@@ -378,7 +370,7 @@ class Talker
 }
 ~~~
 
-### 4.3 Properties and Constants
+### 4.3 屬性和常數
 
 Visibility MUST be declared on all properties.
 
@@ -595,7 +587,7 @@ abstract class ClassName
 }
 ~~~
 
-### 4.7 Method and Function Calls
+### 4.7 方法和函式呼叫
 
 When making a method or function call, there MUST NOT be a space between the
 method or function name and the opening parenthesis, there MUST NOT be a space
@@ -639,7 +631,7 @@ $app->get('/hello/{name}', function ($name) use ($app) {
 });
 ~~~
 
-## 5. Control Structures
+## 5. 控制結構
 
 The general style rules for control structures are as follows:
 
@@ -656,7 +648,7 @@ The body of each structure MUST be enclosed by braces. This standardizes how
 the structures look and reduces the likelihood of introducing errors as new
 lines get added to the body.
 
-### 5.1 `if`, `elseif`, `else`
+### 5.1 `if`，`elseif`，`else`
 
 An `if` structure looks like the following. Note the placement of parentheses,
 spaces, and braces; and that `else` and `elseif` are on the same line as the
@@ -700,7 +692,7 @@ if (
 }
 ~~~
 
-### 5.2 `switch`, `case`
+### 5.2 `switch`，`case`
 
 A `switch` structure looks like the following. Note the placement of
 parentheses, spaces, and braces. The `case` statement MUST be indented once
@@ -867,7 +859,7 @@ try {
 }
 ~~~
 
-## 6. Operators
+## 6. 運算子
 
 Style rules for operators are grouped by arity (the number of operands they take).
 
