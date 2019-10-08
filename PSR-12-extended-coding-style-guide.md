@@ -22,16 +22,9 @@ across multiple projects, it helps to have one set of guidelines to be used amon
 all those projects. Thus, the benefit of this guide is not in the rules themselves
 but the sharing of those rules.
 
-[PSR-2][] 在 2012 被接受為正式標準，從那時至今，PHP 語言
+[PSR-2][] 在 2012 被接受為正式標準，從那時至今，PHP 語言新增了許多會影響規範的修改。雖然 [PSR-2] 對制定當時的 PHP 有相當全面的規範，但是對這些新功能，實作方式則沒有規範。
 
-and since then a number of changes have been made to PHP
-which has implications for coding style guidelines. Whilst [PSR-2] is very comprehensive
-of PHP functionality that existed at the time of writing, new functionality is very
-open to interpretation. 
-
-因此，這份 PSR 希望可以 , seeks to clarify the content of PSR-2 in
-a more modern context with new functionality available, and make the errata to PSR-2
-binding.
+因此，這份 PSR 希望可以基於 PSR-2，釐清針對新功能的規範，並針對部分過去的規範進行勘誤。
 
 ### 針對之前的語言版本
 
@@ -99,7 +92,7 @@ PSR-1 裡面所說的「駝峰式」（StudlyCaps），**必須**解讀成 Pasca
 
 一行程式碼的長度**不該**超過 80 個字元。
 
-lines longer than that **應該** be split into multiple subsequent lines of no more than 80 characters each.
+超過 80 個字元**應該**分成多行，每行不超過 80 個字元。
 
 每行結尾**不該**留有空白。
 
@@ -131,9 +124,9 @@ not relevant may be omitted.
 * 一或多個宣告陳述
 * 檔案的命名空間宣告
 * 一或多個類別的 `use` 引入陳述
-* One or more function-based `use` import statements.
-* One or more constant-based `use` import statements.
-* The remainder of the code in the file.
+* 一或多個函式的 `use` 引入陳述
+* 一或多個常數的 `use` 引入陳述
+* 其餘的程式碼
 
 When a file contains a mix of HTML and PHP, any of the above sections may still
 be used. If so, they MUST be present at the top of the file, even if the
@@ -147,7 +140,8 @@ opening and closing tags.
 Import statements MUST never begin with a leading backslash as they
 must always be fully qualified.
 
-The following example illustrates a complete list of all blocks:
+
+下面的範例包含上述全部的區塊：
 
 ~~~php
 <?php
@@ -177,11 +171,10 @@ class FooBar
 {
     // ... 其餘 PHP 程式碼 ...
 }
-
 ~~~
 
-Compound namespaces with a depth of more than two MUST NOT be used. Therefore the
-following is the maximum compounding depth allowed:
+**絕對不能**使用超過兩層的複合命名空間，換句話說，下面的案例是允許範圍內層數最多的命名空間
+
 ~~~php
 <?php
 
@@ -193,7 +186,7 @@ use Vendor\Package\SomeNamespace\{
 };
 ~~~
 
-And the following would not be allowed:
+以下範例則不被允許：
 
 ~~~php
 <?php
