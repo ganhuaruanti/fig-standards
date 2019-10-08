@@ -12,18 +12,17 @@
 
 這份規範是針對 [PSR-2][]，程式碼風格規範，的延伸，拓展和取代版本。並且需要附屬於 [PSR-1][]，基礎程式碼規範。
 
-跟 [PSR-2][] 一樣，此規範的用意在於減少不同作者之間的認知摩擦。
+跟 [PSR-2][] 一樣，此規範的用意，在藉由列舉和分享一系列的 PHP 格式規則，減少不同程式撰寫者之間的認知摩擦。這份 PSR 文件
 
-Like [PSR-2][], the intent of this specification is to reduce cognitive friction when
-scanning code from different authors. It does so by enumerating a shared set of rules
-and expectations about how to format PHP code. This PSR seeks to provide a set way that
+
+This PSR seeks to provide a set way that
 coding style tools can implement, projects can declare adherence to and developers
 can easily relate to between different projects. When various authors collaborate
 across multiple projects, it helps to have one set of guidelines to be used among
 all those projects. Thus, the benefit of this guide is not in the rules themselves
 but the sharing of those rules.
 
-[PSR-2][] 在 2012 被接受，從那時至今，
+[PSR-2][] 在 2012 被接受，從那時至今，PHP 語言
 
 and since then a number of changes have been made to PHP
 which has implications for coding style guidelines. Whilst [PSR-2] is very comprehensive
@@ -114,22 +113,22 @@ lines longer than that **應該** be split into multiple subsequent lines of no 
 
 所有 PHP 的關鍵字和型態[[1]][keywords][[2]][types] **必須**使用小寫。
 
-Any new types and keywords added to future PHP versions MUST be in lower case.
+所有未來加入 PHP 新版本的關鍵字和形態**必須**使用小寫。
 
 **必須**使用短版本的型態關鍵字，比方說 `bool` 而不是 `boolean`，`int` 而不是 `integer`⋯⋯等等。
 
-## 3. 宣告，Namespace，以及 Import 宣告
+## 3. 宣告，命名空間，以及引入宣告
 
 The header of a PHP file may consist of a number of different blocks. If present,
 each of the blocks below MUST be separated by a single blank line, and MUST NOT contain
 a blank line. Each block MUST be in the order listed below, although blocks that are
 not relevant may be omitted.
 
-* Opening `<?php` tag.
-* File-level docblock.
-* One or more declare statements.
-* The namespace declaration of the file.
-* One or more class-based `use` import statements.
+* 開頭的 `<?php` 標籤
+* 檔案的 docblock
+* 一或多個宣告陳述
+* 檔案的命名空間宣告
+* 一或多個類別的 `use` 引入陳述
 * One or more function-based `use` import statements.
 * One or more constant-based `use` import statements.
 * The remainder of the code in the file.
