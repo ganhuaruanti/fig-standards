@@ -22,12 +22,14 @@ across multiple projects, it helps to have one set of guidelines to be used amon
 all those projects. Thus, the benefit of this guide is not in the rules themselves
 but the sharing of those rules.
 
-[PSR-2][] 在 2012 被接受，從那時至今，PHP 語言
+[PSR-2][] 在 2012 被接受為正式標準，從那時至今，PHP 語言
 
 and since then a number of changes have been made to PHP
 which has implications for coding style guidelines. Whilst [PSR-2] is very comprehensive
 of PHP functionality that existed at the time of writing, new functionality is very
-open to interpretation. This PSR, therefore, seeks to clarify the content of PSR-2 in
+open to interpretation. 
+
+因此，這份 PSR 希望可以 , seeks to clarify the content of PSR-2 in
 a more modern context with new functionality available, and make the errata to PSR-2
 binding.
 
