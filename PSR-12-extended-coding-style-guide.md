@@ -122,6 +122,8 @@ not relevant may be omitted.
 * 一或多個常數的 `use` 引入陳述
 * 其餘的程式碼
 
+如果一個檔案同時包含 HTML 和 PHP，還是可以使用上面所說的任何區塊。如果有使用的話，上面的區塊**必須**
+
 When a file contains a mix of HTML and PHP, any of the above sections may still
 be used. If so, they MUST be present at the top of the file, even if the
 remainder of the code consists of a closing PHP tag and then a mixture of HTML and
