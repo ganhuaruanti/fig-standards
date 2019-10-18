@@ -122,7 +122,7 @@ not relevant may be omitted.
 * 一或多個常數的 `use` 引入陳述
 * 其餘的程式碼
 
-如果一個檔案同時包含 HTML 和 PHP，還是可以使用上面所說的任何區塊。如果有使用的話，上面的區塊**必須**
+如果一個檔案同時包含 HTML 和 PHP，還是可以使用上面所說的任何區塊。如果有使用的話，上面的區塊**必須**放在檔案開頭。
 
 When a file contains a mix of HTML and PHP, any of the above sections may still
 be used. If so, they MUST be present at the top of the file, even if the
@@ -133,7 +133,7 @@ When the opening `<?php` tag is on the first line of the file, it MUST be on its
 own line with no other statements unless it is a file containing markup outside of PHP
 opening and closing tags.
 
-因為必須始終合法，引入陳述**絕對不能**以反斜線開頭。
+因為語句必須從頭到尾合法，引入陳述**絕對不能**以反斜線開頭。
 
 下面的範例包含上述全部的區塊：
 
