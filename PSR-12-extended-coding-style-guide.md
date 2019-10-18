@@ -223,8 +223,7 @@ declare(ticks=1) {
 
 這裡所說的「類別」包含所有的類別，介面，以及 trait。
 
-Any closing brace MUST NOT be followed by any comment or statement on the
-same line.
+所有右括號**絕對不能**在同一行緊接著任何註解或者宣告。
 
 When instantiating a new class, parentheses MUST always be present even when
 there are no arguments passed to the constructor.
