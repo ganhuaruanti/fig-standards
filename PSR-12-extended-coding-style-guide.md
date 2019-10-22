@@ -108,6 +108,8 @@ PSR-1 裡面所說的「駝峰式」（StudlyCaps），**必須**解讀成 Pasca
 
 ## 3. 宣告，命名空間，以及引入宣告
 
+PHP 檔案開頭可能包含許多不同的區塊。每個出現的區塊**必須**以一空白行做區隔，
+
 The header of a PHP file may consist of a number of different blocks. If present,
 each of the blocks below MUST be separated by a single blank line, and MUST NOT contain
 a blank line. Each block MUST be in the order listed below, although blocks that are
@@ -225,8 +227,7 @@ declare(ticks=1) {
 
 所有右括號**絕對不能**在同一行緊接著任何註解或者宣告。
 
-When instantiating a new class, parentheses MUST always be present even when
-there are no arguments passed to the constructor.
+建立新物件時，即使建構子不需要任何參數，還是**必須**出現括弧。
 
 ~~~php
 new Foo();
