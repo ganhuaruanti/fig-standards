@@ -399,19 +399,16 @@ class ClassName
 
 ### 4.4 方法和函式
 
-Visibility MUST be declared on all methods.
+可見度**必須**在所有函式前面宣告。
 
-Method names MUST NOT be prefixed with a single underscore to indicate
-protected or private visibility. That is, an underscore prefix explicitly has
-no meaning.
+**絕對不能**使用單一底線前綴來代表函式是 protected 或者 private。前綴底線不應該代表任何意義。
 
 Method and function names MUST NOT be declared with space after the method name. The
 opening brace MUST go on its own line, and the closing brace MUST go on the
 next line following the body. There MUST NOT be a space after the opening
 parenthesis, and there MUST NOT be a space before the closing parenthesis.
 
-A method declaration looks like the following. Note the placement of
-parentheses, commas, spaces, and braces:
+函式宣告方式如下，要特別注意括弧和逗號的位置：
 
 ~~~php
 <?php
