@@ -108,12 +108,9 @@ PSR-1 裡面所說的「駝峰式」（StudlyCaps），**必須**解讀成 Pasca
 
 ## 3. 宣告，命名空間，以及引入宣告
 
-PHP 檔案開頭可能包含許多不同的區塊。每個出現的區塊**必須**以一空白行做區隔，
+PHP 檔案開頭可能包含許多不同的區塊。每個出現的區塊**必須**以一空白行做區隔，但每個區塊內**絕對不能**包含空白行。
 
-The header of a PHP file may consist of a number of different blocks. If present,
-each of the blocks below MUST be separated by a single blank line, and MUST NOT contain
-a blank line. Each block MUST be in the order listed below, although blocks that are
-not relevant may be omitted.
+如果不需要的話，可以省略特定區塊，但是出現的順序**必須**如下面排列：
 
 * 開頭的 `<?php` 標籤
 * 檔案的 docblock
