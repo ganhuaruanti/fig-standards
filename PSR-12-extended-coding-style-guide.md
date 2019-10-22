@@ -123,11 +123,7 @@ PHP 檔案開頭可能包含許多不同的區塊。每個出現的區塊**必�
 
 如果一個檔案同時包含 HTML 和 PHP，還是可以使用上面所說的任何區塊。如果有使用的話，上面的區塊**必須**放在檔案開頭。
 
-當一個檔案同時包含 HTML 和 PHP 程式碼時，還是可以包含上面所說的區塊。
-
-If so, they MUST be present at the top of the file, even if the
-remainder of the code consists of a closing PHP tag and then a mixture of HTML and
-PHP.
+當一個檔案同時包含 HTML 和 PHP 程式碼時，還是可以包含上面所說的區塊。不過，包含時即使頁面混雜不同的 PHP 和 HTML 段落，上面所說的區塊**必須**全部放在檔案開頭。
 
 When the opening `<?php` tag is on the first line of the file, it MUST be on its
 own line with no other statements unless it is a file containing markup outside of PHP
