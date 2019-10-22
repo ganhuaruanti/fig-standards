@@ -113,7 +113,7 @@ PHP 檔案開頭可能包含許多不同的區塊。每個出現的區塊**必�
 如果不需要的話，可以省略特定區塊，但是出現的順序**必須**如下面排列：
 
 * 開頭的 `<?php` 標籤
-* 檔案的 docblock
+* 檔案的 docblock 註解
 * 一或多個宣告陳述
 * 檔案的命名空間宣告
 * 一或多個類別的 `use` 引入陳述
@@ -125,9 +125,9 @@ PHP 檔案開頭可能包含許多不同的區塊。每個出現的區塊**必�
 
 當一個檔案同時包含 HTML 和 PHP 程式碼時，還是可以包含上面所說的區塊。不過，包含時即使頁面混雜不同的 PHP 和 HTML 段落，上面所說的區塊**必須**全部放在檔案開頭。
 
-When the opening `<?php` tag is on the first line of the file, it MUST be on its
-own line with no other statements unless it is a file containing markup outside of PHP
-opening and closing tags.
+當以 `<?php` 標籤作為檔案開頭時，**必須**自己獨立一行，沒有其他宣告。
+
+unless it is a file containing markup outside of PHP opening and closing tags.
 
 因為語句必須從頭到尾合法，引入陳述**絕對不能**以反斜線開頭。
 
