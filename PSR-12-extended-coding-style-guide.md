@@ -219,7 +219,7 @@ declare(ticks=1) {
 
 這裡所說的「類別」包含所有的類別，介面，以及 trait。
 
-所有右括號**絕對不能**在同一行緊接著任何註解或者宣告。
+所有右大括號**絕對不能**在同一行緊接著任何註解或者宣告。
 
 建立新物件時，即使建構子不需要任何參數，還是**必須**出現括弧。
 
@@ -229,10 +229,9 @@ new Foo();
 
 ### 4.1 繼承和實作
 
-The `extends` and `implements` keywords MUST be declared on the same line as
-the class name.
+`extends` 和 `implements` 關鍵字**必須**和類別名稱宣告於同一行。
 
-The opening brace for the class MUST go on its own line; the closing brace
+類別的右大括號**必須**獨立成為一行； go on its own line; the closing brace
 for the class MUST go on the next line after the body.
 
 Opening braces MUST be on their own line and MUST NOT be preceded or followed
@@ -822,8 +821,7 @@ for (
 
 ### 5.5 `foreach`
 
-A `foreach` statement looks like the following. Note the placement of
-parentheses, spaces, and braces.
+`foreach` 宣告方式如下，注意括號以及空白的位置：
 
 ~~~php
 <?php
@@ -835,8 +833,7 @@ foreach ($iterable as $key => $value) {
 
 ### 5.6 `try`，`catch`，`finally`
 
-A `try-catch-finally` block looks like the following. Note the placement of
-parentheses, spaces, and braces.
+`try-catch-finally` 區塊宣告方式如下，注意括號以及空白的位置：
 
 ~~~php
 <?php
@@ -859,18 +856,19 @@ Style rules for operators are grouped by arity (the number of operands they take
 When space is permitted around an operator, multiple spaces MAY be
 used for readability purposes.
 
-All operators not described here are left undefined.
+所有這邊沒提到的運算子視為未定義。
 
 ### 6.1. 一元運算
 
-The increment/decrement operators MUST NOT have any space between
-the operator and operand.
+遞增／遞減運算子**絕對不能**和運算元之間有任何空格。
+
 ~~~php
 $i++;
 ++$j;
 ~~~
 
-Type casting operators MUST NOT have any space within the parentheses:
+型態轉換運算子**絕對不能**和小括弧之間有任何空格
+
 ~~~php
 $intValue = (int) $input;
 ~~~
