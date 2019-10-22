@@ -123,8 +123,9 @@ PHP 檔案開頭可能包含許多不同的區塊。每個出現的區塊**必�
 
 如果一個檔案同時包含 HTML 和 PHP，還是可以使用上面所說的任何區塊。如果有使用的話，上面的區塊**必須**放在檔案開頭。
 
-When a file contains a mix of HTML and PHP, any of the above sections may still
-be used. If so, they MUST be present at the top of the file, even if the
+當一個檔案同時包含 HTML 和 PHP 程式碼時，還是可以包含上面所說的區塊。
+
+If so, they MUST be present at the top of the file, even if the
 remainder of the code consists of a closing PHP tag and then a mixture of HTML and
 PHP.
 
@@ -134,7 +135,7 @@ opening and closing tags.
 
 因為語句必須從頭到尾合法，引入陳述**絕對不能**以反斜線開頭。
 
-下面的範例包含上述全部的區塊：
+以下的範例包含上面所說全部的區塊：
 
 ~~~php
 <?php
