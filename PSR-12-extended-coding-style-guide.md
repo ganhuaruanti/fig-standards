@@ -553,13 +553,11 @@ public function process(string $algorithm, &...$parts)
 }
 ```
 
-### 4.6 `abstract`, `final`, and `static`
+### 4.6 `abstract`，`final` 和 `static`
 
-When present, the `abstract` and `final` declarations MUST precede the
-visibility declaration.
+如果有宣告 `abstract` 和 `final`，**必須**緊接在可見度宣告之前。
 
-When present, the `static` declaration MUST come after the visibility
-declaration.
+如果有宣告 `static`，**必須**緊接在可見度宣告之後。
 
 ~~~php
 <?php
