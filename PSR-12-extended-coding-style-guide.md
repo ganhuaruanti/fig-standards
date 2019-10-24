@@ -125,9 +125,7 @@ PHP 檔案開頭可能包含許多不同的區塊。每個出現的區塊**必�
 
 當一個檔案同時包含 HTML 和 PHP 程式碼時，還是可以包含上面所說的區塊。不過，包含時即使頁面混雜不同的 PHP 和 HTML 段落，上面所說的區塊**必須**全部放在檔案開頭。
 
-當以 `<?php` 標籤作為檔案開頭時，**必須**自己獨立一行，沒有其他宣告。
-
-unless it is a file containing markup outside of PHP opening and closing tags.
+當以 `<?php` 標籤作為檔案開頭時，**必須**自己獨立一行，沒有其他宣告。除非這個檔案除了 PHP 開頭到結尾標籤以外，還包含其他內容。
 
 因為語句必須從頭到尾合法，引入陳述**絕對不能**以反斜線開頭。
 
@@ -188,11 +186,9 @@ use Vendor\Package\SomeNamespace\{
 };
 ~~~
 
-When wishing to declare strict types in files containing markup outside PHP
-opening and closing tags, the declaration MUST be on the first line of the file
-and include an opening PHP tag, the strict types declaration and closing tag.
+如果希望在一個除了 PHP 開頭到結尾標籤以外，還包含其他內容的檔案裡面，宣告強型別（strict types）的話，宣告的位置**必須**在檔案的第一行，該行同時包含 PHP 開頭標籤，強型別的宣告，以及結尾標籤。
 
-For example:
+像是：
 ~~~php
 <?php declare(strict_types=1) ?>
 <html>
