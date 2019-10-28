@@ -228,11 +228,9 @@ new Foo();
 
 類別的左大括號**必須**獨立成為一行；類別的右大括號**必須**在類別主體的下一行。
 
-左大括號**必須**獨立成為一行，並且**絕對不能** MUST NOT be preceded or followed
-by a blank line.
+左大括號**必須**獨立成為一行，並且**絕對不能**在前面或後面加上空白行。
 
-Closing braces MUST be on their own line and MUST NOT be preceded by a blank
-line.
+右大括號**必須**獨立成為一行，並且**絕對不能**在前面加上空白行。
 
 ~~~php
 <?php
@@ -249,10 +247,9 @@ class ClassName extends ParentClass implements \ArrayAccess, \Countable
 }
 ~~~
 
-Lists of `implements` and, in the case of interfaces, `extends` MAY be split
-across multiple lines, where each subsequent line is indented once. When doing
-so, the first item in the list MUST be on the next line, and there MUST be only
-one interface per line.
+介面的 `implements` 和 `extends` **可以**拆分成多行，每一行都縮排一次。
+
+這樣做的時候，第一個實作的介面**必須**在類別宣告的下一行。每一行**必須**只包含一個介面。
 
 ~~~php
 <?php
@@ -268,14 +265,13 @@ class ClassName extends ParentClass implements
     \Countable,
     \Serializable
 {
-    // constants, properties, methods
+    // 常數，參數，函式
 }
 ~~~
 
 ### 4.2 使用 trait
 
-The `use` keyword used inside the classes to implement traits MUST be
-declared on the next line after the opening brace.
+類別裡宣告 trait 用的 `use` 關鍵字，**必須**宣告在類別左大括弧的下一行。
 
 ~~~php
 <?php
