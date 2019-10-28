@@ -226,10 +226,9 @@ new Foo();
 
 `extends` 和 `implements` 關鍵字**必須**和類別名稱宣告於同一行。
 
-類別的左大括號**必須**獨立成為一行； the closing brace
-for the class MUST go on the next line after the body.
+類別的左大括號**必須**獨立成為一行；類別的右大括號**必須**在類別主體的下一行。
 
-Opening braces MUST be on their own line and MUST NOT be preceded or followed
+左大括號**必須**獨立成為一行，並且**絕對不能** MUST NOT be preceded or followed
 by a blank line.
 
 Closing braces MUST be on their own line and MUST NOT be preceded by a blank
