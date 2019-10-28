@@ -286,8 +286,7 @@ class ClassName
 }
 ~~~
 
-Each individual trait that is imported into a class MUST be included
-one-per-line ，並且每行**必須**有獨立的 `use` 宣告。
+每個 trait **必須**個別在每行宣告，並且每行**必須**有獨立的 `use` 宣告。
 
 ~~~php
 <?php
@@ -306,8 +305,7 @@ class ClassName
 }
 ~~~
 
-When the class has nothing after the `use` import statement, the class
-closing brace MUST be on the next line after the `use` import statement.
+當類別除了 `use` 宣告之外不包含任何東西時，類別的右大括弧**必須**緊接在 `use` 宣告的下一行。
 
 ~~~php
 <?php
@@ -322,7 +320,7 @@ class ClassName
 }
 ~~~
 
-Otherwise, it MUST have a blank line after the `use` import statement.
+不然，在 `use` 宣告下面**必須**包含一行空白行。
 
 ~~~php
 <?php
