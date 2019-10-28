@@ -357,22 +357,19 @@ class Talker
 
 ### 4.3 屬性和常數
 
-Visibility MUST be declared on all properties.
+所有的屬性**必須**宣告可見度。
 
-Visibility MUST be declared on all constants if your project PHP minimum
-version supports constant visibilities (PHP 7.1 or later).
+如果專案的 PHP 版本支援常數宣告可見度（PHP 7.1 之後的版本），那麼所有常數**必須**要宣告可見度。
 
-The `var` keyword MUST NOT be used to declare a property.
+**絕對不能**使用 `var` 關鍵字來宣告屬性。
 
-There MUST NOT be more than one property declared per statement.
+每個宣告**絕對不能**包含超過一個屬性。
 
-Property names MUST NOT be prefixed with a single underscore to indicate
-protected or private visibility. That is, an underscore prefix explicitly has
-no meaning.
+**絕對不能**使用單一底線前綴來代表屬性是 protected 或者 private。前綴底線不應該代表任何意義。
 
-There MUST be a space between type declaration and property name.
+型態宣告和屬性名稱之間**必須**要加上空白。
 
-A property declaration looks like the following:
+屬性宣告的範例如下：
 
 ~~~php
 <?php
@@ -425,7 +422,7 @@ function fooBarBaz($arg1, &$arg2, $arg3 = [])
 }
 ~~~
 
-### 4.5 Method and Function Arguments
+### 4.5 函式參數
 
 In the argument list, there MUST NOT be a space before each comma, and there
 MUST be one space after each comma.
