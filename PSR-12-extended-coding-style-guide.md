@@ -57,7 +57,7 @@ class Foo extends Bar implements FooInterface
 
     final public static function bar()
     {
-        // method body
+        // 函式主體
     }
 }
 ~~~
@@ -194,20 +194,19 @@ use Vendor\Package\SomeNamespace\{
 <html>
 <body>
     <?php
-        // ... additional PHP code ...
+        // ... 其餘 PHP 程式碼 ...
     ?>
 </body>
 </html>
 ~~~
 
-Declare statements MUST contain no spaces and MUST be exactly `declare(strict_types=1)`
-(with an optional semi-colon terminator).
+強型別的宣告**必須**不包含任何空白，並且**必須**寫成 `declare(strict_types=1)`（可以在最尾端加上分號）。
 
-Block declare statements are allowed and MUST be formatted as below. Note position of
-braces and spacing:
+區塊宣告是允許的，並且**必須**是以下的格式。注意大括號和空白的位置：
+
 ~~~php
 declare(ticks=1) {
-    // some code
+    // 一些程式碼
 }
 ~~~
 
@@ -227,7 +226,7 @@ new Foo();
 
 `extends` 和 `implements` 關鍵字**必須**和類別名稱宣告於同一行。
 
-類別的右大括號**必須**獨立成為一行； go on its own line; the closing brace
+類別的左大括號**必須**獨立成為一行； the closing brace
 for the class MUST go on the next line after the body.
 
 Opening braces MUST be on their own line and MUST NOT be preceded or followed
