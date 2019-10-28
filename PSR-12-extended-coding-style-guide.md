@@ -243,7 +243,7 @@ use OtherVendor\OtherPackage\BazClass;
 
 class ClassName extends ParentClass implements \ArrayAccess, \Countable
 {
-    // constants, properties, methods
+    // 常數，參數，函式
 }
 ~~~
 
@@ -287,7 +287,7 @@ class ClassName
 ~~~
 
 Each individual trait that is imported into a class MUST be included
-one-per-line and each inclusion MUST have its own `use` import statement.
+one-per-line ，並且每行**必須**有獨立的 `use` 宣告。
 
 ~~~php
 <?php
