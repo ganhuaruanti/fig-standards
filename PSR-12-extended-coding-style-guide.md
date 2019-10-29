@@ -337,8 +337,7 @@ class ClassName
 }
 ~~~
 
-When using the `insteadof` and `as` operators they must be used as follows taking
-note of indentation, spacing, and new lines.
+使用 `insteadof` 和 `as` 關鍵字時，必須以下面的縮排方式宣告。注意排版，空白和換行的位置：
 
 ~~~php
 <?php
@@ -509,8 +508,7 @@ class ReturnTypeVariations
 
 像前面的範例一樣，如果參數前面有使用參考的操作子 `&`，那麼 `&` 後面絕對不能加上空白。
 
-There MUST NOT be a space between the variadic three dot operator and the argument
-name:
+可變參數的三個點和參數名稱之間**絕對不能**有空白：
 
 ```php
 public function process(string $algorithm, ...$parts)
@@ -518,9 +516,7 @@ public function process(string $algorithm, ...$parts)
     // processing
 }
 ```
-
-When combining both the reference operator and the variadic three dot operator,
-there MUST NOT be any space between the two of them:
+合併參考的操作子 `&` 和可變參數的三個點之間，**絕對不能**包含任何空白
 
 ```php
 public function process(string $algorithm, &...$parts)
@@ -567,11 +563,11 @@ $foo->bar($arg1);
 Foo::bar($arg2, $arg3);
 ~~~
 
-Argument lists MAY be split across multiple lines, where each subsequent line
-is indented once. When doing so, the first item in the list MUST be on the
-next line, and there MUST be only one argument per line. A single argument being
-split across multiple lines (as might be the case with an anonymous function or
-array) does not constitute splitting the argument list itself.
+參數列表**可以**分成多行，每行縮排一次。
+
+這樣處理的話，第一個參數**必須**在函式名稱的下一行，並且每行**必須**只有一個參數
+
+單一參數切分成多行的情況（比方說使用匿名函式或者陣列為參數時）並不屬於將參數列表拆分成多行的情況。
 
 ~~~php
 <?php
