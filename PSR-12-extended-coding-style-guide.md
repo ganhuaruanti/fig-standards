@@ -422,11 +422,9 @@ function fooBarBaz($arg1, &$arg2, $arg3 = [])
 
 ### 4.5 函式參數
 
-In the argument list, there MUST NOT be a space before each comma, and there
-MUST be one space after each comma.
+在參數列表內，每個逗號前面**絕對不能**包含空白，逗號後面**必須**包含一個空白。
 
-Method and function arguments with default values MUST go at the end of the argument
-list.
+函式和方法的參數列表內，如果參數有預設值，這些參數**必須**放在參數列表的最尾端。
 
 ~~~php
 <?php
