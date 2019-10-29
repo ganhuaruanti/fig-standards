@@ -593,16 +593,15 @@ $app->get('/hello/{name}', function ($name) use ($app) {
 
 ## 5. 控制結構
 
-The general style rules for control structures are as follows:
+控制結構的基本規則如下：
 
-- There MUST be one space after the control structure keyword
-- There MUST NOT be a space after the opening parenthesis
-- There MUST NOT be a space before the closing parenthesis
-- There MUST be one space between the closing parenthesis and the opening
-  brace
-- The structure body MUST be indented once
-- The body MUST be on the next line after the opening brace
-- The closing brace MUST be on the next line after the body
+- 控制結構關鍵字的後方**必須**要有一個空格
+- 左小括弧的後方**絕對不能**有空白
+- 右小括弧的前方**絕對不能**有空白
+- 右小括弧和左大括弧之間**必須**要有一個空白
+- 結構主體**必須**縮排一次
+- 結構主體**必須**在左大括弧的下面一行
+- 右大括弧**必須**在主體的下面一行
 
 The body of each structure MUST be enclosed by braces. This standardizes how
 the structures look and reduces the likelihood of introducing errors as new
