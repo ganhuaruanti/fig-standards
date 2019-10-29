@@ -489,8 +489,7 @@ class ReturnTypeVariations
 }
 ~~~
 
-In nullable type declarations, there MUST NOT be a space between the question mark
-and the type.
+將型態宣告為可為空值（nullable）時，問號和型態宣告之間**絕對不能**有空白。
 
 ~~~php
 <?php
@@ -508,8 +507,7 @@ class ReturnTypeVariations
 }
 ~~~
 
-When using the reference operator `&` before an argument, there MUST NOT be
-a space after it, like in the previous example.
+像前面的範例一樣，如果參數前面有使用參考的操作子 `&`，那麼 `&` 後面絕對不能加上空白。
 
 There MUST NOT be a space between the variadic three dot operator and the argument
 name:
