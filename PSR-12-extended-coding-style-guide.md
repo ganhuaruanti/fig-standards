@@ -555,11 +555,9 @@ abstract class ClassName
 
 ### 4.7 方法和函式呼叫
 
-When making a method or function call, there MUST NOT be a space between the
-method or function name and the opening parenthesis, there MUST NOT be a space
-after the opening parenthesis, and there MUST NOT be a space before the
-closing parenthesis. In the argument list, there MUST NOT be a space before
-each comma, and there MUST be one space after each comma.
+呼叫方法或函式時，名稱和左小括號之間**絕對不能**有任何空白。左小括號之後**絕對不能**有任何空白。右小括號之前**絕對不能**有任何空白。
+
+參數列表內，逗號前面**絕對不能**有任何空白，逗號後面**必須**有一個空白。
 
 ~~~php
 <?php
