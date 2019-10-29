@@ -440,13 +440,11 @@ class ClassName
 }
 ~~~
 
-Argument lists MAY be split across multiple lines, where each subsequent line
-is indented once. When doing so, the first item in the list MUST be on the
-next line, and there MUST be only one argument per line.
+參數列表**可以**分成多行，每行縮排一次。
 
-When the argument list is split across multiple lines, the closing parenthesis
-and opening brace MUST be placed together on their own line with one space
-between them.
+這樣處理的話，第一個參數**必須**在函式名稱的下一行，並且每行**必須**只有一個參數
+
+當參數區分成多行時，如果沒有宣告回傳型態，右小括弧和左大括弧**必須**宣告在同一行，並且中間以一個空白間隔。
 
 ~~~php
 <?php
@@ -460,15 +458,12 @@ class ClassName
         &$arg2,
         array $arg3 = []
     ) {
-        // method body
+        // 方法主體
     }
 }
 ~~~
 
-When you have a return type declaration present, there MUST be one space after
-the colon followed by the type declaration. The colon and declaration MUST be
-on the same line as the argument list closing parenthesis with no spaces between
-the two characters.
+如果有宣告回傳型態的話，分號和型態宣告之間**必須**加上一個空白，分號和宣告**必須**和參數列表的右小括號同一行，並且分號和右小括號之間沒有空白。
 
 ~~~php
 <?php
