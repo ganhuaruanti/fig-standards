@@ -387,12 +387,13 @@ class ClassName
 
 **絕對不能**使用單一底線前綴來代表函式是 protected 或者 private。前綴底線不應該代表任何意義。
 
-Method and function names MUST NOT be declared with space after the method name. The
-opening brace MUST go on its own line, and the closing brace MUST go on the
-next line following the body. There MUST NOT be a space after the opening
-parenthesis, and there MUST NOT be a space before the closing parenthesis.
+函式名稱的後面**絕對不能**加上任何空白。
 
-函式宣告方式如下，要特別注意括弧和逗號的位置：
+右大括號**必須**獨立一行，左大括號**必須**在主體的下一行。
+
+右大括號後面**絕對不能**有任何空白，左大括號前面**絕對不能**有任何空白。
+
+方法宣告方式如下，要特別注意括弧和逗號的位置：
 
 ~~~php
 <?php
@@ -408,8 +409,7 @@ class ClassName
 }
 ~~~
 
-A function declaration looks like the following. Note the placement of
-parentheses, commas, spaces, and braces:
+函式宣告方式如下，要特別注意括弧和逗號的位置：
 
 ~~~php
 <?php
