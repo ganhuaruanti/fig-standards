@@ -603,13 +603,11 @@ $app->get('/hello/{name}', function ($name) use ($app) {
 - 結構主體**必須**在左大括弧的下面一行
 - 右大括弧**必須**在主體的下面一行
 
-The body of each structure MUST be enclosed by braces. This standardizes how
-the structures look and reduces the likelihood of introducing errors as new
-lines get added to the body.
+每個主體**必須**以大括弧包起來。這樣可以讓控制主體的外觀標準化，並減少加入新程式碼時出錯的機率。
 
 ### 5.1 `if`，`elseif`，`else`
 
-An `if` structure looks like the following. Note the placement of parentheses,
+`if` 結構**必須**看起來像下面範例。Note the placement of parentheses,
 spaces, and braces; and that `else` and `elseif` are on the same line as the
 closing brace from the earlier body.
 
@@ -625,8 +623,7 @@ if ($expr1) {
 }
 ~~~
 
-The keyword `elseif` SHOULD be used instead of `else if` so that all control
-keywords look like single words.
+**應該**使用 `elseif` 而不是 `else if`，這樣所有的控制關鍵字看起來都會是一個單字。
 
 Expressions in parentheses MAY be split across multiple lines, where each
 subsequent line is indented at least once. When doing so, the first condition
@@ -642,12 +639,12 @@ if (
     $expr1
     && $expr2
 ) {
-    // if body
+    // if 主體
 } elseif (
     $expr3
     && $expr4
 ) {
-    // elseif body
+    // elseif 主體
 }
 ~~~
 
@@ -986,8 +983,7 @@ $foo->bar(
 
 ## 8. 匿名類別
 
-Anonymous Classes MUST follow the same guidelines and principles as closures
-in the above section.
+匿名類別**必須**符合上面針對匿名函式的原則以及方針。
 
 ~~~php
 <?php
