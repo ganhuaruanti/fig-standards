@@ -403,7 +403,7 @@ class ClassName
 {
     public function fooBarBaz($arg1, &$arg2, $arg3 = [])
     {
-        // method body
+        // 方法主體
     }
 }
 ~~~
@@ -415,7 +415,7 @@ class ClassName
 
 function fooBarBaz($arg1, &$arg2, $arg3 = [])
 {
-    // function body
+    // 函式主體
 }
 ~~~
 
@@ -434,12 +434,12 @@ class ClassName
 {
     public function foo(int $arg1, &$arg2, $arg3 = [])
     {
-        // method body
+        // 方法主體
     }
 }
 ~~~
 
-參數列表**可以**分成多行，每行縮排一次。
+參數列表**可以**拆分成多行，每行縮排一次。
 
 這樣處理的話，第一個參數**必須**在函式名稱的下一行，並且每行**必須**只有一個參數
 
@@ -544,7 +544,7 @@ abstract class ClassName
 
     final public static function bar()
     {
-        // method body
+        // 方法主體
     }
 }
 ~~~
@@ -613,11 +613,11 @@ $app->get('/hello/{name}', function ($name) use ($app) {
 <?php
 
 if ($expr1) {
-    // if body
+    // if 主體
 } elseif ($expr2) {
-    // elseif body
+    // elseif 主體
 } else {
-    // else body;
+    // else 主體;
 }
 ~~~
 
@@ -694,7 +694,7 @@ switch (
     $expr1
     && $expr2
 ) {
-    // structure body
+    // 結構主體
 }
 ~~~
 
@@ -706,11 +706,11 @@ switch (
 <?php
 
 while ($expr) {
-    // structure body
+    // 結構主體
 }
 ~~~
 
-小括號內的判斷表達**可以**分成多行。分成多行時，判斷表達應該往右縮排一次。
+小括號內的判斷表達**可以**拆分成多行。分成多行時，判斷表達應該往右縮排一次。
 
 第一個判斷式**必須**在左小括弧下一行。
 
@@ -725,7 +725,7 @@ while (
     $expr1
     && $expr2
 ) {
-    // structure body
+    // 結構主體
 }
 ~~~
 
@@ -735,7 +735,7 @@ while (
 <?php
 
 do {
-    // structure body;
+    // 結構主體
 } while ($expr);
 ~~~
 
@@ -751,7 +751,7 @@ do {
 <?php
 
 do {
-    // structure body;
+    // 結構主體
 } while (
     $expr1
     && $expr2
@@ -766,7 +766,7 @@ do {
 <?php
 
 for ($i = 0; $i < 10; $i++) {
-    // for body
+    // for 主體
 }
 ~~~
 
@@ -784,7 +784,7 @@ for (
     $i < 10;
     $i++
 ) {
-    // for body
+    // for 主體
 }
 ~~~
 
@@ -901,14 +901,11 @@ $closureWithArgsVarsAndReturn = function ($arg1, $arg2) use ($var1, $var2): bool
 };
 ~~~
 
-Argument lists and variable lists MAY be split across multiple lines, where
-each subsequent line is indented once. When doing so, the first item in the
-list MUST be on the next line, and there MUST be only one argument or variable
-per line.
+參數列表**可以**拆分成多行，每一行都縮排一次。
 
-When the ending list (whether of arguments or variables) is split across
-multiple lines, the closing parenthesis and opening brace MUST be placed
-together on their own line with one space between them.
+這樣處理的話，第一個參數**必須**在函式名稱的下一行，並且每行**必須**只有一個參數。
+
+當匿名函數最後一個表區分成多行時，如果沒有宣告回傳型態，右小括弧和左大括弧**必須**宣告在同一行，並且中間以一個空白間隔。
 
 The following are examples of closures with and without argument lists and
 variable lists split across multiple lines.
@@ -921,7 +918,7 @@ $longArgs_noVars = function (
     $longerArgument,
     $muchLongerArgument
 ) {
-   // body
+   // 主體
 };
 
 $noArgs_longVars = function () use (
@@ -929,7 +926,7 @@ $noArgs_longVars = function () use (
     $longerVar2,
     $muchLongerVar3
 ) {
-   // body
+   // 主體
 };
 
 $longArgs_longVars = function (
@@ -941,7 +938,7 @@ $longArgs_longVars = function (
     $longerVar2,
     $muchLongerVar3
 ) {
-   // body
+   // 主體
 };
 
 $longArgs_shortVars = function (
@@ -949,7 +946,7 @@ $longArgs_shortVars = function (
     $longerArgument,
     $muchLongerArgument
 ) use ($var1) {
-   // body
+   // 主體
 };
 
 $shortArgs_longVars = function ($arg) use (
@@ -957,7 +954,7 @@ $shortArgs_longVars = function ($arg) use (
     $longerVar2,
     $muchLongerVar3
 ) {
-   // body
+   // 主體
 };
 ~~~
 
