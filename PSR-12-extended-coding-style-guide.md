@@ -879,27 +879,25 @@ $variable = $foo ?: 'bar';
 
 參數列表裡面有預設值的參數**必須**放在列表的最後面。
 
+如果匿名函式有定義回傳型態，必須遵守一般函式的規則；
 
-If a return type is present, it MUST follow the same rules as with normal
-functions and methods; if the `use` keyword is present, the colon MUST follow
-the `use` list closing parentheses with no spaces between the two characters.
+如果還使用了 `use` 關鍵字，冒號和 `use` 列表的右小括號之間**必須**緊連，中間沒有空白分隔。
 
-A closure declaration looks like the following. Note the placement of
-parentheses, commas, spaces, and braces:
+匿名函式宣告方式如下，注意括號以及空白的位置：
 
 ~~~php
 <?php
 
 $closureWithArgs = function ($arg1, $arg2) {
-    // body
+    // 主體
 };
 
 $closureWithArgsAndVars = function ($arg1, $arg2) use ($var1, $var2) {
-    // body
+    // 主體
 };
 
 $closureWithArgsVarsAndReturn = function ($arg1, $arg2) use ($var1, $var2): bool {
-    // body
+    // 主體
 };
 ~~~
 
