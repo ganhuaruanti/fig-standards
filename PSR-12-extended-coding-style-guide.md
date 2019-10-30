@@ -760,8 +760,7 @@ do {
 
 ### 5.4 `for`
 
-A `for` statement looks like the following. Note the placement of parentheses,
-spaces, and braces.
+`for` 結構如下，注意括弧和空白的位置。
 
 ~~~php
 <?php
@@ -771,10 +770,11 @@ for ($i = 0; $i < 10; $i++) {
 }
 ~~~
 
-Expressions in parentheses MAY be split across multiple lines, where each
-subsequent line is indented at least once. When doing so, the first expression
-MUST be on the next line. The closing parenthesis and opening brace MUST be
-placed together on their own line with one space between them.
+小括號內的判斷表達**可以**分成多行。分成多行時，判斷表達應該往右縮排一次。
+
+第一個判斷式**必須**在左小括弧下一行。
+
+右小括弧和左大括弧**必須**在同一行，該行只有這兩個符號，並且中間以一個空白隔開。
 
 ~~~php
 <?php
@@ -820,10 +820,9 @@ try {
 
 ## 6. 運算子
 
-Style rules for operators are grouped by arity (the number of operands they take).
+以下規則以參數數量（該運算子會碰觸到的運算元數量）分類。
 
-When space is permitted around an operator, multiple spaces MAY be
-used for readability purposes.
+如果允許運算子附近有空格時，**可以**使用多個空格來增加可讀性。
 
 所有這邊沒提到的運算子視為未定義。
 
@@ -844,7 +843,7 @@ $intValue = (int) $input;
 
 ### 6.2. 二元運算
 
-所有二元的 [運算][] ， [比較][] ， [賦值][] ， [位元處理][] ， [邏輯][] ， [字串][] 以及型態 [type][] 操作元**必須**前後加上一個空白：
+所有二元的 [運算][] ， [比較][] ， [賦值][] ， [位元處理][] ， [邏輯][] ， [字串][] 以及型態 [type][] 運算子**必須**前後加上一個空白：
 
 ~~~php
 if ($a === $b) {
@@ -856,13 +855,13 @@ if ($a === $b) {
 
 ### 6.3. 三元運算
 
-三元條件運算元必須在 `?` 和 `:` 前後都各加上一個空白：
+三元條件運算子必須在 `?` 和 `:` 前後都各加上一個空白：
 
 ~~~php
 $variable = $foo ? 'foo' : 'bar';
 ~~~
 
-如果省略掉中間的操作子，變成 `?:` 的結構，這個操作元**必須**遵守二元 [比較][] 的規則：
+如果省略掉中間的運算元，變成 `?:` 的結構，這個運算子**必須**遵守二元 [比較][] 的規則：
 
 ~~~php
 $variable = $foo ?: 'bar';
