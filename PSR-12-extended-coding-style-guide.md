@@ -873,15 +873,12 @@ $variable = $foo ?: 'bar';
 
 右大括號**必須**在關鍵字同一行，左大括號**必須**要在主體的下一行。
 
-There MUST NOT be a space after the opening parenthesis of the argument list
-or variable list, and there MUST NOT be a space before the closing parenthesis
-of the argument list or variable list.
+左小括號和第一個參數之間**絕對不能**插入空白。右小括號和最後一個參數之間**絕對不能**插入空白。
 
-In the argument list and variable list, there MUST NOT be a space before each
-comma, and there MUST be one space after each comma.
+參數列表裡面，逗號前面**絕對不能**有空白，逗號後面**必須**有一個空白。
 
-Closure arguments with default values MUST go at the end of the argument
-list.
+參數列表裡面有預設值的參數**必須**放在列表的最後面。
+
 
 If a return type is present, it MUST follow the same rules as with normal
 functions and methods; if the `use` keyword is present, the colon MUST follow
