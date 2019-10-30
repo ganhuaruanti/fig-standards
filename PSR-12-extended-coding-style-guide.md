@@ -907,8 +907,7 @@ $closureWithArgsVarsAndReturn = function ($arg1, $arg2) use ($var1, $var2): bool
 
 當匿名函數最後一個表區分成多行時，如果沒有宣告回傳型態，右小括弧和左大括弧**必須**宣告在同一行，並且中間以一個空白間隔。
 
-The following are examples of closures with and without argument lists and
-variable lists split across multiple lines.
+以下是匿名函式包含以及不包含參數列表或變數列表，拆分成多行的範例：
 
 ~~~php
 <?php
@@ -958,8 +957,7 @@ $shortArgs_longVars = function ($arg) use (
 };
 ~~~
 
-Note that the formatting rules also apply when the closure is used directly
-in a function or method call as an argument.
+注意以上規則也適用於直接用在參數內的情境：
 
 ~~~php
 <?php
@@ -983,17 +981,16 @@ $foo->bar(
 $instance = new class {};
 ~~~
 
-The opening brace MAY be on the same line as the `class` keyword so long as
-the list of `implements` interfaces does not wrap. If the list of interfaces
-wraps, the brace MUST be placed on the line immediately following the last
-interface.
+如果實作的介面沒有換行，左大括號**可以**和 `class` 關鍵字位在同一行
+
+如果實作的介面列表換行了，那麼左大括號應該緊接最後一個介面的下一行
 
 ~~~php
 <?php
 
 // Brace on the same line
 $instance = new class extends \Foo implements \HandleableInterface {
-    // Class content
+    // 類別內容
 };
 
 // Brace on the next line
@@ -1002,7 +999,7 @@ $instance = new class extends \Foo implements
     \Countable,
     \Serializable
 {
-    // Class content
+    // 類別內容
 };
 ~~~
 
