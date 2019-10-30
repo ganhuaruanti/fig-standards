@@ -607,9 +607,7 @@ $app->get('/hello/{name}', function ($name) use ($app) {
 
 ### 5.1 `if`，`elseif`，`else`
 
-`if` 結構**必須**看起來像下面範例。Note the placement of parentheses,
-spaces, and braces; and that `else` and `elseif` are on the same line as the
-closing brace from the earlier body.
+`if` 結構**必須**看起來像下面範例。注意括號和空白的位置。特別是 `else` 和 `elseif` 關鍵字位在上一個主體下面的右大括號。
 
 ~~~php
 <?php
@@ -625,12 +623,13 @@ if ($expr1) {
 
 **應該**使用 `elseif` 而不是 `else if`，這樣所有的控制關鍵字看起來都會是一個單字。
 
-Expressions in parentheses MAY be split across multiple lines, where each
-subsequent line is indented at least once. When doing so, the first condition
-MUST be on the next line. The closing parenthesis and opening brace MUST be
-placed together on their own line with one space between them. Boolean
-operators between conditions MUST always be at the beginning or at the end of
-the line, not a mix of both.
+小括號內的判斷表達**可以**分成多行。分成多行時，判斷表達應該往右縮排一次。
+
+第一個判斷式**必須**在左小括弧下一行。
+
+右小括弧和左大括弧**必須**在同一行，該行只有這兩個符號，並且中間以一個空白隔開。
+
+條件之間的布林運算式**必須**全部在判斷式的前面或全部在判斷式的後面，不可以交錯出現。
 
 ~~~php
 <?php
@@ -650,11 +649,14 @@ if (
 
 ### 5.2 `switch`，`case`
 
-A `switch` structure looks like the following. Note the placement of
-parentheses, spaces, and braces. The `case` statement MUST be indented once
-from `switch`, and the `break` keyword (or other terminating keywords) MUST be
-indented at the same level as the `case` body. There MUST be a comment such as
-`// no break` when fall-through is intentional in a non-empty `case` body.
+`switch` 結構如下，注意括弧和空白的位置。
+
+`case` 的位置**必須**從 `switch` 往右縮排一次。
+
+`break` 以及其他終止判斷關鍵字**必須**與 `case` 主體縮排位置相同。
+
+在有邏輯的 `case` 主體內，如果刻意不用終止判斷關鍵字，讓程式可以繼續往下執行的話，**必須**加上 `// no break` 之類的註解
+
 
 ~~~php
 <?php
@@ -677,12 +679,13 @@ switch ($expr) {
 }
 ~~~
 
-Expressions in parentheses MAY be split across multiple lines, where each
-subsequent line is indented at least once. When doing so, the first condition
-MUST be on the next line. The closing parenthesis and opening brace MUST be
-placed together on their own line with one space between them. Boolean
-operators between conditions MUST always be at the beginning or at the end of
-the line, not a mix of both.
+小括號內的判斷表達**可以**分成多行。分成多行時，判斷表達應該往右縮排一次。
+
+第一個判斷式**必須**在左小括弧下一行。
+
+右小括弧和左大括弧**必須**在同一行，該行只有這兩個符號，並且中間以一個空白隔開。
+
+條件之間的布林運算式**必須**全部在判斷式的前面或全部在判斷式的後面，不可以交錯出現。
 
 ~~~php
 <?php
@@ -695,10 +698,9 @@ switch (
 }
 ~~~
 
-### 5.3 `while`, `do while`
+### 5.3 `while`，`do while`
 
-A `while` statement looks like the following. Note the placement of
-parentheses, spaces, and braces.
+`while` 結構如下，注意括弧和空白的位置。
 
 ~~~php
 <?php
@@ -726,8 +728,7 @@ while (
 }
 ~~~
 
-Similarly, a `do while` statement looks like the following. Note the placement
-of parentheses, spaces, and braces.
+`do while` 的做法類似，結構如下。注意括弧和空白的位置。
 
 ~~~php
 <?php
