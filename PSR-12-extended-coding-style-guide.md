@@ -710,12 +710,13 @@ while ($expr) {
 }
 ~~~
 
-Expressions in parentheses MAY be split across multiple lines, where each
-subsequent line is indented at least once. When doing so, the first condition
-MUST be on the next line. The closing parenthesis and opening brace MUST be
-placed together on their own line with one space between them. Boolean
-operators between conditions MUST always be at the beginning or at the end of
-the line, not a mix of both.
+小括號內的判斷表達**可以**分成多行。分成多行時，判斷表達應該往右縮排一次。
+
+第一個判斷式**必須**在左小括弧下一行。
+
+右小括弧和左大括弧**必須**在同一行，該行只有這兩個符號，並且中間以一個空白隔開。
+
+條件之間的布林運算式**必須**全部在判斷式的前面或全部在判斷式的後面，不可以交錯出現。
 
 ~~~php
 <?php
@@ -738,10 +739,13 @@ do {
 } while ($expr);
 ~~~
 
-Expressions in parentheses MAY be split across multiple lines, where each
-subsequent line is indented at least once. When doing so, the first condition
-MUST be on the next line. Boolean operators between conditions MUST
-always be at the beginning or at the end of the line, not a mix of both.
+小括號內的判斷表達**可以**分成多行。分成多行時，判斷表達應該往右縮排一次。
+
+第一個判斷式**必須**在左小括弧下一行。
+
+右小括弧和左大括弧**必須**在同一行，該行只有這兩個符號，並且中間以一個空白隔開。
+
+條件之間的布林運算式**必須**全部在判斷式的前面或全部在判斷式的後面，不可以交錯出現。
 
 ~~~php
 <?php
@@ -792,7 +796,7 @@ for (
 <?php
 
 foreach ($iterable as $key => $value) {
-    // foreach body
+    // foreach 主體
 }
 ~~~
 
@@ -804,13 +808,13 @@ foreach ($iterable as $key => $value) {
 <?php
 
 try {
-    // try body
+    // try 主體
 } catch (FirstThrowableType $e) {
-    // catch body
+    // catch 主體
 } catch (OtherThrowableType | AnotherThrowableType $e) {
-    // catch body
+    // catch 主體
 } finally {
-    // finally body
+    // finally 主體
 }
 ~~~
 
@@ -840,9 +844,8 @@ $intValue = (int) $input;
 
 ### 6.2. 二元運算
 
-All binary [arithmetic][], [comparison][], [assignment][], [bitwise][],
-[logical][], [string][], and [type][] operators MUST be preceded and
-followed by at least one space:
+所有二元的 [運算][]，[比較][]，[賦值][]，[位元處理][]，[邏輯][]，[字串][]以及型態 [type][]操作元**必須**前後加上一個空白：
+
 ~~~php
 if ($a === $b) {
     $foo = $bar ?? $a ?? $b;
