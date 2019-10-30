@@ -869,8 +869,7 @@ $variable = $foo ?: 'bar';
 
 ## 7. 閉包
 
-Closures MUST be declared with a space after the `function` keyword, and a
-space before and after the `use` keyword.
+閉包**必須**在 `function` 關鍵字之後加上一個空格，並且在 `use` 關鍵字前後均加上一個空格。
 
 The opening brace MUST go on the same line, and the closing brace MUST go on
 the next line following the body.
