@@ -871,8 +871,7 @@ $variable = $foo ?: 'bar';
 
 閉包**必須**在 `function` 關鍵字之後加上一個空格，並且在 `use` 關鍵字前後均加上一個空格。
 
-The opening brace MUST go on the same line, and the closing brace MUST go on
-the next line following the body.
+右大括號**必須**在關鍵字同一行，左大括號**必須**要在主體的下一行。
 
 There MUST NOT be a space after the opening parenthesis of the argument list
 or variable list, and there MUST NOT be a space before the closing parenthesis
