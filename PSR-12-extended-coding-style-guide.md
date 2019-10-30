@@ -729,7 +729,7 @@ while (
 }
 ~~~
 
-`do while` 的做法類似，結構如下。注意括弧和空白的位置。
+`do while` 的規範類似 `while`，結構如下。注意括弧和空白的位置。
 
 ~~~php
 <?php
@@ -844,7 +844,7 @@ $intValue = (int) $input;
 
 ### 6.2. 二元運算
 
-所有二元的 [運算][]，[比較][]，[賦值][]，[位元處理][]，[邏輯][]，[字串][]以及型態 [type][]操作元**必須**前後加上一個空白：
+所有二元的 [運算][] ， [比較][] ， [賦值][] ， [位元處理][] ， [邏輯][] ， [字串][] 以及型態 [type][] 操作元**必須**前後加上一個空白：
 
 ~~~php
 if ($a === $b) {
@@ -856,15 +856,14 @@ if ($a === $b) {
 
 ### 6.3. 三元運算
 
-The conditional operator, also known simply as the ternary operator, MUST be
-preceded and followed by at least one space around both the `?`
-and `:` characters:
+三元條件運算元必須在 `?` 和 `:` 前後都各加上一個空白：
+
 ~~~php
 $variable = $foo ? 'foo' : 'bar';
 ~~~
 
-When the middle operand of the conditional operator is omitted, the operator
-MUST follow the same style rules as other binary [comparison][] operators:
+如果省略掉中間的操作子，變成 `?:` 的結構，這個操作元**必須**遵守二元 [比較][] 的規則：
+
 ~~~php
 $variable = $foo ?: 'bar';
 ~~~
